@@ -1,0 +1,17 @@
+name: 'Front-hands Action'
+description: 'Retrieves a defined amount of employees by country'
+inputs:
+  country:  # id of input
+    description: 'Country of employees'
+    required: true
+    default: 'Netherlands'
+  amount: #id of input
+    description: 'Amount of employees to retrieve'
+    required: true
+    default: '3'
+outputs:
+  employees: # id of output
+    description: 'Array of employees retrieved'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

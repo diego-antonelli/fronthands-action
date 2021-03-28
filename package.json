@@ -1,0 +1,27 @@
+{
+  "name": "fronthands-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js --license LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego-antonelli/fronthands-action.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego-antonelli/fronthands-action/issues"
+  },
+  "homepage": "https://github.com/diego-antonelli/fronthands-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "o.js": "^1.2.1",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0"
+  }
+}
