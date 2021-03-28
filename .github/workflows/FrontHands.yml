@@ -1,0 +1,22 @@
+name: "Front-hands GH action example"
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: "Retrieve employees"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checking-out code"
+        uses: actions/checkout@v2
+      - name: "Retrieve data from Data Hub"
+        id: data_hub
+        uses: ./
+        with:
+          country: 'Russia'
+          amount: '20'
+      - name: "Show employees"
+        run: echo ${{ toJSON(steps.data_hub.outputs.employees) }}
